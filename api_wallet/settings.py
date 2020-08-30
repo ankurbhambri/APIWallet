@@ -85,15 +85,14 @@ WSGI_APPLICATION = 'api_wallet.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wallet',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'daeg84qsdroe2b',
+        'USER': 'pggfdjuwlsbakc',
+        'PASSWORD': 'c8d446d0fc689afd3ae0cda1c133512637df3025e026547271bcafb8b4b6ad6d',
+        'HOST': 'ec2-18-235-109-97.compute-1.amazonaws.com',
+        'PORT': 5432,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
