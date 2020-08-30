@@ -1,36 +1,30 @@
-Requirement for this project for setup:
+Requirement for this project for setup:<br/>
 
--> Create a vitual environment.
-== virtualenv -p python3.6 venv
--> Activate your virtual environment using this command
-== source venv/bin/activate
--> Install required python libraries by using pip installer.
-== pip install -r requirements.txt
--> Migrate database.
-== python manage.py migrate
--> Finally, run your django runserver.
-== python manage.py runserver
-
-
-
-# Rest Framework Auth Token for Authentication
---To generate a token, just for testing purpose, is using the command line utility again
-Ex - python manage.py drf_create_token root
+-> Create a vitual environment.<br/>
+== virtualenv -p python3.6 venv<br/>
+-> Activate your virtual environment using this command<br/>
+== source venv/bin/activate<br/>
+-> Install required python libraries by using pip installer.<br/>
+== pip install -r requirements.txt<br/>
+-> Migrate database.<br/>
+== python manage.py migrate<br/>
+-> Finally, run your django runserver.<br/>
+== python manage.py runserver<br/>
 
 
 # JWT based authentication
---To authenticate and obtain the token. The endpoint is /api/token/ and it only accepts POST requests.
-Ex - http post http://127.0.0.1:8000/api/token/ username=vitor password=root
+--To authenticate and obtain the token. The endpoint is /api/token/ and it only accepts POST requests.<br/>
+Ex - http post http://127.0.0.1:8000/api/token/ username=vitor password=root<br/>
 
 # Please keep these things in mind while authenticating using JWT
-The JWT is acquired by exchanging an username + password for an access token and an refresh token.
+The JWT is acquired by exchanging an username + password for an access token and an refresh token.<br/>
 
-The access token is usually short-lived (expires in 5 min or so, can be customized though).
+The access token is usually short-lived (expires in 5 min or so, can be customized though).<br/>
 
-The refresh token lives a little bit longer (expires in 24 hours, also customizable). It is comparable to an authentication session. After it expires, you need a full login with username + password again.
+The refresh token lives a little bit longer (expires in 24 hours, also customizable). It is comparable to an authentication session. After it expires, you need a full login with username + password again.<br/>
 
---To get a new access token, you should use the refresh token endpoint /api/token/refresh/ posting the refresh token:
-Ex - http post http://127.0.0.1:8000/api/token/refresh/ refresh="Put previous refresh token here"
+--To get a new access token, you should use the refresh token endpoint /api/token/refresh/ posting the refresh token:<br/>
+Ex - http post http://127.0.0.1:8000/api/token/refresh/ refresh="Put previous refresh token here"<br/>
 
 
 # Post API 1 endpoint that allows users to see wallet details.
@@ -44,7 +38,7 @@ Ex - http post http://127.0.0.1:8000/api/token/refresh/ refresh="Put previous re
     "id": 29,
     "username": "ankur1"
 	}
-Ex-  http://localhost:8000/users/ 
+Ex-  http://localhost:8000/users/ <br/>
 
 
 # Post API 2 endpoint that allows users to see wallet details.
