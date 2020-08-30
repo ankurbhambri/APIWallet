@@ -43,7 +43,7 @@ class AddAmountViewSet(viewsets.ViewSet):
             "sender": "self",
             "receiver": "self",
             "transaction_type": "credited",
-            "amount": request.data.get("amount"),
+            "credited_amount": request.data.get("amount"),
             "balance": wallet.balance,
         }
         Transactions.objects.create(wallet=wallet, extra_feild=tranx_history)
