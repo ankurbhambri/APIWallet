@@ -80,7 +80,7 @@ Ex-  http://localhost:8000/add_amount/
 	}
 Ex-  http://localhost:8000/pay_amount/ 
 
-# API 5 endpoint that prints a user month wise transactions.
+# Get API 5 endpoint that prints a user month wise transactions.
 	response
 	{
 	    "user_upi": "ankur@27",
@@ -90,3 +90,7 @@ Ex-  http://localhost:8000/pay_amount/
 	    "wallet_balance": 40.0
 	}
 Ex-  http://localhost:8000/all_transactions/
+
+
+# Procfile is provided to deploy on heroku
+
