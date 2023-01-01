@@ -24,7 +24,7 @@ The access token is usually short-lived (expires in 5 min or so, can be customiz
 The refresh token lives a little bit longer (expires in 24 hours, also customizable). It is comparable to an authentication session. After it expires, you need a full login with username + password again.<br/>
 
 --To get a new access token, you should use the refresh token endpoint /api/token/refresh/ posting the refresh token:<br/>
-Ex - http post http://127.0.0.1:8000/api/token/refresh/ refresh="Put previous refresh token here"<br/>
+Ex - http post http://127.0.0.1:8000/api/token/refresh/ refresh="Put previous refresh token here."<br/>
 
 
 # Post API 1 endpoint that allows users to see wallet details.
